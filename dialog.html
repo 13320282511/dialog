@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" charset="UTF-8">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link href="css/dialog.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/zepto.min.js"></script>
+<script type="text/javascript" src="js/dialog.js"></script>
+</head>
+<body>
+   <!-- <div class="g-dialog-container">
+   	
+		<div class="dialog-window">
+			<div class="dialog-header ok">
+			</div>
+			<div class="dialog-body">
+				
+				我是弹窗组件的body部分
+			</div>
+			<div class="dialog-footer">
+				
+				<button>1组件</button>
+				<button>2组件</button>
+			</div>
+		</div>
+   </div>  -->
+   <button id="btn2">弹出一个不带任何按钮，且是警告框</button>
+   <button id="btn3">弹出一个不带任何按钮，且是警告框</button>
+   <script type="text/javascript">
+   	
+      $("#btn2").click(function(){
+         $.dialog({
+            type:"waring",
+            message:"wo de ",
+            effect:true,
+            maskClose:true,
+            buttons:[
+               {
+                  text:"您好"
+               },
+               {
+                  callback:function(){
+                     alert(3333);
+                     return false;
+                  }
+               },
+               {
+                  callback:function(){
+                     $.dialog({
+                        type:"ok",
+                        delay:3000,
+                        delayCallback:function(){
+                           alert("关闭")
+                        }
+                     });
+                     return false;
+                  }
+               }
+            ]
+         });
+
+      });
+
+      $("#btn3").click(function(){
+         $.dialog({
+            type:"waring",
+            message:"wo de ",
+            effect:true,
+            maskClose:true
+         });
+
+      });
+   </script>
+</body>
+</html>

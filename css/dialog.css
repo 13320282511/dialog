@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-11 11:09:46
+ * @version $Id$
+ */button{border-radius: 10px; width: 100%;color:#fff;}
+.g-dialog-container{ display: -webkit-box;-webkit-box-align:center;-webkit-box-pack:center;box-align:center;box-pack:center; position: fixed;top:0;left:0;width:100%;height:100%;background-color: rgba(0,0,0,.6);}
+.dialog-window{width:200px; padding:10px;border-radius:5px;background-color:rgba(0,0,0,.6); -webkit-transition:all .3s ease;}
+.dialog-header{ display: -webkit-box; -webkit-box-pack:center; -webkit-box-align:center;box-pack:center;box-align:center; }
+.dialog-header .waiting{width: 50px;height:50px;background-color:#fff; display: -webkit-box; -webkit-box-pack:center ;-webkit-box-align:center; box-pack:center; box-align:center;}
+.dialog-header .ok:before{display: block;content: ""; width: 10px;height: 4px;border-style:solid;border-width:0 0 2px 2px;border-color:#fff; transform: rotate(-45deg); }
+.dialog-header .waring{width: 50px;height:50px;border:1px solid #fff;border-radius: 50%; transform: rotate(90deg);display: -webkit-box; -webkit-box-pack:center ;-webkit-box-align:center; box-pack:center; box-align:center;}
+.dialog-header .waring:before{display: block;content: "";width: 10px;height:2px;background-color:#fff; }
+.dialog-header .waring:after{display: block;content: "";width: 2px;height:2px;margin-left: 5px;background-color:#fff;}
+.dialog-body{color:#fff; text-align: center;;padding: 10px 0;}
+
+.dialog-footer{display: -webkit-box;-webkit-box-pack:center;box-pack:center;}
+.dialog-footer button{border-radius: 5px;width:50px;height:30px;line-height: 30px;text-align: center;color:#fff; background-color:green; margin-right: 5px;}
+.dialog-footer button:last-child{margin-right: 0;}
