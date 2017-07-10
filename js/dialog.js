@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 
  * @authors Your Name (you@example.org)
  * @date    2016-09-11 11:09:21
@@ -15,7 +15,7 @@
 			height:"auto",
 			//对话框的类型
 			type:"waiting",
-			//按钮配置
+			//按钮配置;
 			buttons:null,
 			//弹出框延迟多久关闭
 			delay:null,
