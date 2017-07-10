@@ -13,7 +13,7 @@
 			//对话框的宽，高
 			width:"auto",
 			height:"auto",
-			//对话框的类型
+			//对话框的类型;
 			type:"waiting",
 			//按钮配置;
 			buttons:null,
